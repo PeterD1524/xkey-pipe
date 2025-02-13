@@ -1,7 +1,7 @@
 use anyhow::{bail, Context, Result};
 use clap::Parser;
 use x11rb::{
-    connection::{Connection, RequestConnection},
+    connection::Connection,
     protocol::{
         xproto::{self, ConnectionExt, CreateWindowAux, EventMask, KeyPressEvent, WindowClass},
         xtest::ConnectionExt as _,
